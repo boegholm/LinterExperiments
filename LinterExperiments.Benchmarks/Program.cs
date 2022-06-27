@@ -7,18 +7,18 @@ using LinterExperiments.Smells.CodeSmellExamples;
 
 namespace LinterExperiments.Benchmarks
 {
-    [RPlotExporter]
-    [BenchmarkDotNet.Attributes.AsciiDocExporter]
-    public class LinterTypeCheck
-    {
-        [Benchmark] public string TypeCheckingGood_getType() => new TypeCheckingGood().getType();
-        [Benchmark] public string TypeCheckingRTTIBadGetClass_getType() => new TypeCheckingRTTIBadGetClass().getType();
-        [Benchmark] public string TypeCheckingRTTIBadInstanceOf_getType() => new TypeCheckingRTTIBadInstanceOf().getType();
-        [Benchmark] public string TypeCheckingTypeFieldBadIfElse_getType() => new TypeCheckingTypeFieldBadIfElse().getType();
-        [Benchmark] public string TypeCheckingTypeFieldBadSwitch_getType() => new TypeCheckingTypeFieldBadSwitch().getType();
-        [Benchmark] public string TypeCheckingTypeFieldPattern_getType() => new TypeCheckingTypeFieldPattern().getType();
+    //[RPlotExporter]
+    //[BenchmarkDotNet.Attributes.AsciiDocExporter]
+    //public class LinterTypeCheck
+    //{
+    //    [Benchmark] public string TypeCheckingGood_getType() => new TypeCheckingGood().getType();
+    //    [Benchmark] public string TypeCheckingRTTIBadGetClass_getType() => new TypeCheckingRTTIBadGetClass().getType();
+    //    [Benchmark] public string TypeCheckingRTTIBadInstanceOf_getType() => new TypeCheckingRTTIBadInstanceOf().getType();
+    //    [Benchmark] public string TypeCheckingTypeFieldBadIfElse_getType() => new TypeCheckingTypeFieldBadIfElse().getType();
+    //    [Benchmark] public string TypeCheckingTypeFieldBadSwitch_getType() => new TypeCheckingTypeFieldBadSwitch().getType();
+    //    [Benchmark] public string TypeCheckingTypeFieldPattern_getType() => new TypeCheckingTypeFieldPattern().getType();
 
-    }
+    //}
 
     [RPlotExporter]
     [BenchmarkDotNet.Attributes.AsciiDocExporter]

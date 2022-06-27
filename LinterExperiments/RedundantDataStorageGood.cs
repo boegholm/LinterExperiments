@@ -4,7 +4,7 @@
     {
         private int[] arr = {12, 42, 54, 1, 29, 390, 2, 39, 5849, 30, 1034, 439, 3228, 20, 392, 4832,
                             203, 39, 3489, 498, 304, 32, 4930, 849, 182, 3892, 483, 37, 19, 93, 83};
-        [BenchmarkCategory("smells")][Benchmark] public override int[] ReverseList()
+        public override int[] ReverseList()
         {
             int upper;
             int lower;
@@ -19,7 +19,7 @@
             return arr;
         }
 
-        [BenchmarkCategory("smells")][Benchmark] public override int[] SortList()
+        public override int[] SortList()
         {
             for (int i = 0; i < arr.Length - 1; i++)
             {
@@ -36,7 +36,7 @@
             return arr;
         }
 
-        [BenchmarkCategory("smells")][Benchmark] public override int SumList()
+        public override int SumList()
         {
             int total = 0;
             for (int i = 0; i < arr.Length; i++)

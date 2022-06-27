@@ -4,7 +4,7 @@
     {
         private Employee obj { get; set; }
 
-        [BenchmarkCategory("smells")][Benchmark] public override string getType()
+        public override string getType()
         {
             return obj.getTypeString();
         }

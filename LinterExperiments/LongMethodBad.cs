@@ -4,7 +4,7 @@
     {
         private int[] arr;
         private int ARR_SIZE = 10;
-        [BenchmarkCategory("smells")][Benchmark] public override void Compute()
+        public override void Compute()
         {
             // make array
             Random rand = new Random();

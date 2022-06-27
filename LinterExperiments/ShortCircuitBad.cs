@@ -2,7 +2,7 @@
 {
     public class ShortCircuitBad : ShortCircuitBase
     {
-        [BenchmarkCategory("smells")][Benchmark] public override void ShortCircuit()
+        public override void ShortCircuit()
         {
             int a = 100;
             int b = 1000;

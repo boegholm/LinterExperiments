@@ -8,7 +8,7 @@
         public string zip = "9000";
         public string country = "Danmark";
 
-        [BenchmarkCategory("smells")][Benchmark] public override string GetFullAddress()
+        public override string GetFullAddress()
         {
             return streetName + ";" + city + ";" + zip + ";" + state + ";" + country;
         }

@@ -42,7 +42,7 @@
             decimal currentSalary { get; set; }
             decimal expectedSalary { get; set; }
         }
-        [BenchmarkCategory("smells")][Benchmark] public override string GetCandidateInfo()
+        public override string GetCandidateInfo()
         {
             Candidate cand1 = new Candidate(1, "Mike", "Oxlong", "SpoonerStreet 14",
                 "Bachelor in Software Engineering", 4.9,

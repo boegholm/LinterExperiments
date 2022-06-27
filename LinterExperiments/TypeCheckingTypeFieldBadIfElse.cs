@@ -7,7 +7,7 @@
         private const int ENGINEER = 1;
         private const int DIRECTOR = 2;
 
-        [BenchmarkCategory("smells")][Benchmark] public override string getType()
+        public override string getType()
         {
             // user defined getType method
             if (this.obj.getTypeField() == ENGINEER) return "Engineer";

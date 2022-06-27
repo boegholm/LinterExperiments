@@ -6,7 +6,7 @@ namespace LinterExperiments
     {
         public class DeadCodeBad : DeadCodeBase
         {
-             [BenchmarkCategory("smells")][Benchmark] public override void Run()
+             public override void Run()
             {
                 int a = 5;
                 int b = 10;

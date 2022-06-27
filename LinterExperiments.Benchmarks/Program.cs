@@ -34,17 +34,15 @@ namespace LinterExperiments.Benchmarks
         //}
         int n = 5_000_000;
         [Benchmark]
-        public void Good()
+        public double Good()
         {
-            for(int i=0;i<n;i++)
-                good.DeadLocalStore(0.4250);
+            return good.DeadLocalStore(0.4250);
         }
 
         [Benchmark]
-        public void Bad()
+        public double Bad()
         {
-            for (int i = 0; i < n; i++)
-                bad.DeadLocalStore(0.4250);
+            return bad.DeadLocalStore(0.4250);
         }
     }
 }

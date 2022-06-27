@@ -49,7 +49,7 @@ namespace LinterExperiments.Benchmarks
     {
         public static void Main(string[] args)
         {
-            var summary = BenchmarkRunner.Run(typeof(AllLinterEx).Assembly, args: args);
+            var summary = BenchmarkRunner.Run<AllLinterEx>( args: args);
 
             //var summary = BenchmarkRunner.Run<LinterExperiments>(args:args);
             //var summary = BenchmarkRunner.Run(typeof(LinterProgram).Assembly, args: args);

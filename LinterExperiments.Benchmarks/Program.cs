@@ -20,6 +20,8 @@ namespace LinterExperiments.Benchmarks
 
     //}
 
+
+
     [RPlotExporter]
     [BenchmarkDotNet.Attributes.AsciiDocExporter]
     public class AllLinterEx

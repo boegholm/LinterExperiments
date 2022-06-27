@@ -14,8 +14,8 @@ namespace LinterExperiments.Benchmarks
         public static void Main(string[] args)
         {
             //var summary = BenchmarkRunner.Run<LinterExperiments>(args:args);
-
-            var othersum = BenchmarkSwitcher.FromAssembly(typeof(LinterProgram).Assembly).Run(args: args);
+            var summary = BenchmarkRunner.Run(typeof(LinterProgram).Assembly, args: args);
+            //var othersum = BenchmarkSwitcher.FromAssembly(typeof(LinterProgram).Assembly).Run(args: args);
         }
     }
     [RPlotExporter]

@@ -17,8 +17,8 @@ namespace LinterExperiments.Benchmarks
     [RPlotExporter]
     public class LinterExperiments
     {
-        private static DeadLocalStoreBase bad = new DeadLocalStoreBad();
-        private static DeadLocalStoreBase good = new DeadLocalStoreGood();
+        private DeadLocalStoreBase bad = new DeadLocalStoreBad();
+        private DeadLocalStoreBase good = new DeadLocalStoreGood();
         //private SHA256 sha256 = SHA256.Create();
         //private MD5 md5 = MD5.Create();
         //private byte[] data;

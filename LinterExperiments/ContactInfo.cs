@@ -1,6 +1,6 @@
 ﻿namespace LinterExperiments
 {
-    class ContactInfo
+    public class ContactInfo
     {
         private string streetName = "Frederik Bajers Vej";
         private string city = "Aalborg";

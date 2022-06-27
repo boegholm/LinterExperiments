@@ -1,6 +1,6 @@
 ﻿namespace LinterExperiments
 {
-    class FeatureEnvyGood : FeatureEnvyBase
+    public class FeatureEnvyGood : FeatureEnvyBase
     {
         private string city = "Aalborg";
         private string state = "Jylland";

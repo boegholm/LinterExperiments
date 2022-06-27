@@ -1,6 +1,6 @@
 ﻿namespace LinterExperiments
 {
-    class TypeCheckingTypeFieldBadSwitch : TypeCheckingBase
+    public class TypeCheckingTypeFieldBadSwitch : TypeCheckingBase
     {
         private Employee obj { get; set; }
         private const int SALESMAN = 0;

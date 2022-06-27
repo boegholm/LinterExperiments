@@ -1,6 +1,6 @@
 ﻿namespace LinterExperiments
 {
-    class FeatureEnvyBad : FeatureEnvyBase
+    public class FeatureEnvyBad : FeatureEnvyBase
     {
         private ContactInfo _contactInfo;
 

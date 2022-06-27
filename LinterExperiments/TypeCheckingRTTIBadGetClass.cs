@@ -2,7 +2,6 @@
 {
     public class TypeCheckingRTTIBadGetClass : TypeCheckingBase
     {
-        private Employee obj { get; set; }
         public override string getType()
         {
             // built-in GetType method

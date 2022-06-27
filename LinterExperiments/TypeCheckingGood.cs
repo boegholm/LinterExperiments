@@ -2,7 +2,6 @@
 {
     public class TypeCheckingGood : TypeCheckingBase
     {
-        private Employee obj { get; set; }
 
         public override string getType()
         {

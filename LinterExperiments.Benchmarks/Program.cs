@@ -9,6 +9,19 @@ namespace LinterExperiments.Benchmarks
 {
     [RPlotExporter]
     [BenchmarkDotNet.Attributes.AsciiDocExporter]
+    public class LinterTypeCheck
+    {
+        [Benchmark] public string TypeCheckingGood_getType() => new TypeCheckingGood().getType();
+        [Benchmark] public string TypeCheckingRTTIBadGetClass_getType() => new TypeCheckingRTTIBadGetClass().getType();
+        [Benchmark] public string TypeCheckingRTTIBadInstanceOf_getType() => new TypeCheckingRTTIBadInstanceOf().getType();
+        [Benchmark] public string TypeCheckingTypeFieldBadIfElse_getType() => new TypeCheckingTypeFieldBadIfElse().getType();
+        [Benchmark] public string TypeCheckingTypeFieldBadSwitch_getType() => new TypeCheckingTypeFieldBadSwitch().getType();
+        [Benchmark] public string TypeCheckingTypeFieldPattern_getType() => new TypeCheckingTypeFieldPattern().getType();
+
+    }
+
+    [RPlotExporter]
+    [BenchmarkDotNet.Attributes.AsciiDocExporter]
     public class AllLinterEx
     {
         [Benchmark] public void DeadCodeBad_Run() => new DeadCodeBad().Run();
@@ -44,13 +57,15 @@ namespace LinterExperiments.Benchmarks
         [Benchmark] public string TypeCheckingRTTIBadInstanceOf_getType() => new TypeCheckingRTTIBadInstanceOf().getType();
         [Benchmark] public string TypeCheckingTypeFieldBadIfElse_getType() => new TypeCheckingTypeFieldBadIfElse().getType();
         [Benchmark] public string TypeCheckingTypeFieldBadSwitch_getType() => new TypeCheckingTypeFieldBadSwitch().getType();
+        [Benchmark] public string TypeCheckingTypeFieldPattern_getType() => new TypeCheckingTypeFieldPattern().getType();
     }
 
     public class Program
     {
         public static void Main(string[] args)
         {
-            var summary = BenchmarkRunner.Run<AllLinterEx>( args: args);
+            //var summary = BenchmarkRunner.Run<AllLinterEx>( args: args);
+            var summary = BenchmarkRunner.Run<LinterTypeCheck>( args: args);
 
             //var summary = BenchmarkRunner.Run<LinterExperiments>(args:args);
             //var summary = BenchmarkRunner.Run(typeof(LinterProgram).Assembly, args: args);

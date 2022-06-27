@@ -7,7 +7,8 @@ using LinterExperiments.Smells.CodeSmellExamples;
 
 namespace LinterExperiments.Benchmarks
 {
-
+    [RPlotExporter]
+    [BenchmarkDotNet.Attributes.AsciiDocExporter]
     public class AllLinterEx
     {
         [Benchmark] public void DeadCodeBad_Run() => new DeadCodeBad().Run();

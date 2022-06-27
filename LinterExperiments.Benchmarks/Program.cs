@@ -11,7 +11,7 @@ namespace LinterExperiments.Benchmarks
     {
         public static void Main(string[] args)
         {
-            var summary = BenchmarkRunner.Run<LinterExperiments>();
+            var summary = BenchmarkRunner.Run<LinterExperiments>(args:args);
         }
     }
     [RPlotExporter]

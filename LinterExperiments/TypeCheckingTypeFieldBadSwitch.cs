@@ -23,7 +23,7 @@
             }
         }
 
-         [BenchmarkCategory("smells")][Benchmark] public override void SetObj(Employee newObj)
+        public override void SetObj(Employee newObj)
         {
             obj = newObj;
         }

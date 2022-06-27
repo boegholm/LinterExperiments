@@ -2,7 +2,7 @@
 {
     public class ParameterByValueGood : ParameterByValueBase
     {
-        [Benchmark] public override void ParameterByValue()
+        [BenchmarkCategory("smells")][Benchmark] public override void ParameterByValue()
         {
             int a = 100;
             int b = 50;

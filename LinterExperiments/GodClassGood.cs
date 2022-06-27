@@ -72,7 +72,7 @@
 
         }
 
-        [Benchmark] public override string GetCandidateInfo()
+        [BenchmarkCategory("smells")][Benchmark] public override string GetCandidateInfo()
         {
             Candidate cand1 = new Candidate(1, "Mike", "Oxlong", "SpoonerStreet 14", "Bachelor in Software Engineering",
                 4.9, new List<string> { "McDonalds", "Ford Motors", "Google", "Amazon", "AVK" },

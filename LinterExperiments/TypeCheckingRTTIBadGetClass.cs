@@ -3,7 +3,7 @@
     public class TypeCheckingRTTIBadGetClass : TypeCheckingBase
     {
         private Employee obj { get; set; }
-        [Benchmark] public override string getType()
+        [BenchmarkCategory("smells")][Benchmark] public override string getType()
         {
             // built-in GetType method
             if (obj.GetType() == typeof(Engineer)) return "Engineer";

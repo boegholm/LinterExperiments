@@ -14,7 +14,7 @@
             return age;
         }
 
-        [Benchmark] public override void InLine()
+        [BenchmarkCategory("smells")][Benchmark] public override void InLine()
         {
             int thomasAge = 15;
             int sophieAge = 32;

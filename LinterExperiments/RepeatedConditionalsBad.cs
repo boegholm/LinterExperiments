@@ -2,7 +2,7 @@
 {
     public class RepeatedConditionalsBad : RepeatedConditionalsBase
     {
-        [Benchmark] public override void RepeatedConditionals()
+        [BenchmarkCategory("smells")][Benchmark] public override void RepeatedConditionals()
         {
             int a = 100;
             int b = 200;

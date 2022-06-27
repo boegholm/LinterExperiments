@@ -2,7 +2,7 @@
 {
     public class SelfAssignmentGood : SelfAssignmentBase
     {
-        [Benchmark] public override string SelfAssignment()
+        [BenchmarkCategory("smells")][Benchmark] public override string SelfAssignment()
         {
             string a = "";
             string x = "Played College Ball you know ";

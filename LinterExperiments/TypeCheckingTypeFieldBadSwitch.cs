@@ -7,7 +7,7 @@
         private const int ENGINEER = 1;
         private const int DIRECTOR = 2;
 
-        [Benchmark] public override string getType()
+        [BenchmarkCategory("smells")][Benchmark] public override string getType()
         {
             // user defined getType method
             switch (this.obj.getTypeField())
@@ -23,7 +23,7 @@
             }
         }
 
-         [Benchmark] public override void SetObj(Employee newObj)
+         [BenchmarkCategory("smells")][Benchmark] public override void SetObj(Employee newObj)
         {
             obj = newObj;
         }

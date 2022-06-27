@@ -5,7 +5,7 @@
         private int[] arr;
         private int ARR_SIZE = 10;
 
-        [Benchmark] public override void Compute()
+        [BenchmarkCategory("smells")][Benchmark] public override void Compute()
         {
             CreateArray();
             //PrintArray();

@@ -4,7 +4,7 @@
     {
         private List<int> list_a = new List<int>() { 1, 3, 5, 7, 9 };
         private List<int> list_b = new List<int>() { 2, 4, 6, 8, 10 };
-        [Benchmark] public override void SumElements()
+        [BenchmarkCategory("smells")][Benchmark] public override void SumElements()
         {
             int sum_a = 0;
             int sum_b = 0;

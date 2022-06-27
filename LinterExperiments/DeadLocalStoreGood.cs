@@ -5,7 +5,7 @@
     {
         public class DeadLocalStoreGood : DeadLocalStoreBase
         {
-            [Benchmark] public double Run() => DeadLocalStore(23.42);
+            [BenchmarkCategory("smells")][Benchmark] public double Run() => DeadLocalStore(23.42);
 
             public override double DeadLocalStore(double radius)
             {

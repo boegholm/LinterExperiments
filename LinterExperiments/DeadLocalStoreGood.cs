@@ -5,8 +5,7 @@
     {
         public class DeadLocalStoreGood : DeadLocalStoreBase
         {
-            [BenchmarkCategory("smells")]
-            [Benchmark] public override double Run()
+            public override double Run()
             {
                 return DeadLocalStore(23.42);
             }
